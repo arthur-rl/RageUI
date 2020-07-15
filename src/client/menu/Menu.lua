@@ -44,6 +44,7 @@ function RageUI.CreateMenu(Title, Subtitle, X, Y, TextureDictionary, TextureName
     Menu.Closable = true
     Menu.InstructionalScaleform = RequestScaleformMovie("INSTRUCTIONAL_BUTTONS")
     Menu.CursorStyle = 1
+    Menu.Args = {}
 
     if string.starts(Menu.Subtitle, "~") then
         Menu.PageCounterColour = string.sub(Menu.Subtitle, 1, 3)

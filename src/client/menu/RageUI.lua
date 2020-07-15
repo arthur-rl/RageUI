@@ -42,6 +42,7 @@ RageUI.CurrentMenu = nil
 ---@type table
 RageUI.NextMenu = nil
 
+
 ---@type number
 RageUI.Options = 0
 
@@ -652,7 +653,7 @@ function RageUI.IsVisible(menu, header, glare, instructional, items, panels)
         end
         RageUI.Subtitle()
         if (items ~= nil) then
-            items()
+            items(table.unpack(menu.Args or {}))
         end
         RageUI.Background();
         RageUI.Navigation();
@@ -700,3 +701,6 @@ function RageUI.GetStyleAudio()
     return RageUI.Settings.Audio.Use or "RageUI"
 end
 
+function RageUI.SetMenuArguments(menu, args) 
+    menu.Args = args
+end

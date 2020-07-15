@@ -23,7 +23,7 @@ client_scripts {
 }
 
 client_scripts {
-     --'tests/rmenu/basic.lua',
+     'tests/rmenu/basic.lua',
 }
 
 
