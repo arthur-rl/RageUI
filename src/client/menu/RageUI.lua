@@ -704,3 +704,7 @@ end
 function RageUI.SetMenuArguments(menu, args) 
     menu.Args = args
 end
+
+function RageUI.GetMenuArguments(menu) 
+    return menu.Args
+end
